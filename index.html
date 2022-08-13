@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand"> Andres<span>demoya</span>.com </a>
+        <img
+          src="/images/icons/hamburguer.svg"
+          alt="Open Navigation"
+          class="mobile-menu"
+          id="mobile-cta"
+          width="20px"
+          height="20px"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="/images/icons/close.svg"
+            alt="Close Navigation"
+            width="20px"
+            height="20px"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+
+          <form action="comida.html" method="post">
+            <label for="user_type">Admin</label>
+            <select name="user_type" id="user_type">
+              <option value="">Choose...</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+              <option value="guest">Guest</option>
+            </select>
+
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+
+            <input
+              type="submit"
+              id="submit"
+              class="send-user-cta"
+              name="submit"
+              value="Enter"
+            />
+          </form>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Delicious &amp; Easy to Make</p>
+          <h1>A Dish That Doesn't Stink</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Learn To Make It</a>
+            <a href="#" class="watch-video-cta">
+              <img src="/images/icons/video.svg" alt="Watch a video" />Watch a
+              video
+            </a>
+          </div>
+        </div>
+        <img
+          src="/images/illustrations/undraw_barbecue.svg"
+          class="hero-img"
+          alt="Illustration"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul>
+          <li>Plato: Arroces</li>
+          <li>Cocina: Española</li>
+          <li>Keyword: Receta tradicional</li>
+          <li>Tiempo de preparación: 20 minutos</li>
+          <li>Tiempo de cocción: 25 minutos</li>
+          <li>Tiempo total: 45 minutos</li>
+          <li>Raciones: 4</li>
+          <li>Calorías: 340kcal</li>
+          <li>
+            Autor:
+            <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+              >Comedera.Com</a
+            >
+          </li>
+        </ul>
+        <img src="/images/paella.jpeg" alt="Paella" />
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="container">
+        <h3 id="informacion">Receta de paella de marisco paso a paso:</h3>
+        <ul>
+          <li>Plato: Arroces</li>
+          <li>Cocina: Española</li>
+          <li>Keyword: Receta tradicional</li>
+          <li>Tiempo de preparación: 20 minutos</li>
+          <li>Tiempo de cocción: 25 minutos</li>
+          <li>Tiempo total: 45 minutos</li>
+          <li>Raciones: 4</li>
+          <li>Calorías: 340kcal</li>
+          <li>
+            Autor:
+            <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+              >Comedera.Com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ingredients">
+      <div class="container">
+        <h3 id="ingredientes">Ingredientes</h3>
+        <ol>
+          <li>2 tazas de arroz</li>
+          <li>4 tazas de caldo de gambas</li>
+          <li>½ kg de calamares</li>
+          <li>½ kg de gambas frescas</li>
+          <li>1 puñado de conchas de mar almejas y mejillones</li>
+          <li>1 cebolla</li>
+          <li>1 tomate mediano</li>
+          <li>½ pimiento rojo</li>
+          <li>2 dientes de ajo</li>
+          <li>½ taza de guisantes</li>
+          <li>1 ramo de hojas de perejil fresco</li>
+          <li>Aceite de oliva</li>
+          <li>Sal</li>
+          <li>Pimienta</li>
+          <li>Colorante amarillo ó algunas hebras de azafrán</li>
+        </ol>
+        <a href="#">Volver a arriba</a>
+      </div>
+    </section>
+
+    <section class="polling-section">
+      <div id="encuesta">
+        <label>
+          <strong>Encuesta:</strong>&NonBreakingSpace; ¿Cual es el mejor plato
+          de la cocina española?
+          <input list="platos" />
+        </label>
+
+        <datalist id="platos">
+          <option value="Paella"></option>
+          <option value="Morcilla"></option>
+          <option value="Tapas"></option>
+          <option value="Gazpacho"></option>
+        </datalist>
+      </div>
+    </section>
+
+    <section class="elaboration">
+      <div class="container">
+        <h3 id="elaboracion">Elaboración paso a paso</h3>
+        <p>
+          Limpia y pela las gambas. las conchas y cabeza para hacer caldo.
+          Resérvalo. <br />
+          También limpia los calamares y pícalos en ruedas. Limpia también las
+          conchas de mar con abundante agua para que suelten cualquier residuo
+          de arena. <br />
+          En una paellera, ó sartén muy grande y profunda, sofríe en aceite de
+          oliva, la cebolla, el ajo, pimiento y tomate picados en cuadritos
+          pequeños. Agrégale un poco de pimienta y sal. <br />
+          Pon los calamares y luego las conchas de mar. Deja que se cocinen unos
+          minutos. Verás que comienza a hacerse un caldo, esto está bien.<br />
+          Agrega las 2 tazas de arroz y revuelve para que se mezcle todo.
+          Seguidamente ponle 4 tazas del caldo de gambas que hiciste
+          anteriormente. Si no te alcanza, completa con agua. Revuelve bien.
+          <br />
+          Agrega una cucharadita de colorante amarillo ó las hebras de azafrán y
+          deja hervir por unos 3 minutos. <br />
+          Aun con líquido en la paellera, agrega los guisantes frescos, las
+          gambas y el perejil previamente picado muy pequeñito. Chequea la sal y
+          la pimienta y agrega de ser necesario. Deja cocinar hasta que esté
+          casi seco el líquido. <br />
+          En este momento puedes ponerle unas tiras de pimiento para decorar y
+          algunos langostinos con su concha. Baja el fuego y tapa. Deja cocinar
+          por 15 minutos y prueba el grano. Si está listo retira del fuego y
+          sirve tu paella de marisco con un chorro de aceite de oliva por encima
+          para darle aun más sabor.
+        </p>
+        <a href="#">Volver a arriba</a>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <div class="container">
+        <table>
+          <caption>
+            Tabla de informativa
+          </caption>
+          <tr>
+            <th>Nombre</th>
+            <th>Cocina</th>
+            <th>Keyword</th>
+            <th>Tiempo de preparación</th>
+            <th>Tiempo de cocción</th>
+            <th>Tiempo total</th>
+            <th>Raciones</th>
+            <th>Calorías</th>
+            <th>Autor</th>
+          </tr>
+          <tr>
+            <td>Paella</td>
+            <td>Española</td>
+            <td>Receta tradicional</td>
+            <td>20 minutos</td>
+            <td>25 minutos</td>
+            <td>45 minutos</td>
+            <td>4</td>
+            <td>340kcal</td>
+            <td>
+              <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+                >Comedera.Com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Morcilla</td>
+            <td>Española</td>
+            <td>Receta tradicional</td>
+            <td>30 minutos</td>
+            <td>10 minutos</td>
+            <td>40 minutos</td>
+            <td>1</td>
+            <td>400kcal</td>
+            <td>
+              <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+                >Comedera.Com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Tapas</td>
+            <td>Española</td>
+            <td>Receta tradicional</td>
+            <td>20 minutos</td>
+            <td>7 minutos</td>
+            <td>27 minutos</td>
+            <td>10</td>
+            <td>300kcal</td>
+            <td>
+              <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+                >Comedera.Com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Gazpacho</td>
+            <td>Española</td>
+            <td>Receta tradicional</td>
+            <td>20 minutos</td>
+            <td>10 minutos</td>
+            <td>30 minutos</td>
+            <td>1</td>
+            <td>300kcal</td>
+            <td>
+              <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+                >Comedera.Com</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="checkbox">
+      <form>
+        <caption>
+          Lista de Ingredientes
+        </caption>
+        <br />
+        <input type="checkbox" name="azucar" id="azucar" />azucar<br />
+        <input type="checkbox" name="platano" id="platano" />platano<br />
+        <input type="checkbox" name="tamarindo" id="tamarindo" />tamarindo<br />
+        <input type="checkbox" name="aguacate" id="aguacate" />aguacate<br />
+      </form>
+    </section>
+
+    <section class="multiple">
+      <form method="post">
+        <select name="multiple" size="4" multiple>
+          <optgroup label="numeros">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </optgroup>
+          <optgroup label="letras">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="e">e</option>
+            <option value="f">f</option>
+            <option value="g">g</option>
+            <option value="h">h</option>
+            <option value="i">i</option>
+            <option value="j">j</option>
+            <option value="k">k</option>
+            <option value="l">l</option>
+            <option value="m">m</option>
+            <option value="n">n</option>
+            <option value="o">o</option>
+            <option value="p">p</option>
+            <option value="q">q</option>
+            <option value="r">r</option>
+            <option value="s">s</option>
+            <option value="t">t</option>
+            <option value="u">u</option>
+            <option value="v">v</option>
+            <option value="w">w</option>
+            <option value="x">x</option>
+            <option value="y">y</option>
+            <option value="z">z</option>
+          </optgroup>
+        </select>
+        <br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    
+
+    <input type="file" name="archivo" id="archivo" />
+    <form action="pagina.html" method="post">
+    <fieldset>
+        <legend>Formulario</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" autofocus />
+        <br />
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" />
+        <br />
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <label for="password2">Repetir Password:</label>
+        <input type="password" name="password2" id="password2" />
+        <br />
+        <label for="terminos">Acepto los terminos:</label>
+        <input type="checkbox" name="terminos" id="terminos" />
+        <br />
+        <input type="submit" value="Enviar" />
+      &NonBreakingSpace; &NonBreakingSpace;
+        <input type="range" value="0-100" min="0" max="100" />
+        <input type="date" class="date">
+
+        <input list="data">
+          <datalist id="data">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+        </datalist>
+      </form>
+    </fieldset>
+    option[value="$"]*6
+
+    
+
+    <section class="contac-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Contact"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type your message here..."
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+
+            <input
+              type="submit"
+              id="submit"
+              class="send-message-cta"
+              name="submit"
+              value="Send message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.456226572489!2d-74.80878418459305!3d11.004356292167088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42dd4f56894f9%3A0xeebaa9d138a311d6!2sCentro%20Comercial%20Villa%20Country!5e0!3m2!1sen!2sco!4v1658963576458!5m2!1sen!2sco"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

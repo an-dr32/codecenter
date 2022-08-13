@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Receta de Paella</title>
+  </head>
+  <body>
+    <header>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Receta</a>
+        <a href="#">Ingredientes</a>
+        <a href="#">Encuesta</a>
+        <a href="#">Paso a Paso</a>
+      </div>
+  
+      <!-- Element to open the sidenav -->
+      <div class="burger">
+        <i class="material-icons" onclick="openNav()">menu</i>
+      </div>
+  
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+      <div id="formulario">
+        <form action="/" method="POST">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <img
+        src="/images/paella.jpeg"
+        alt="Imagen de una paella, plato originario de Valencia (España). Su ingrediente principal es el arroz, habitualmente acompañado por mariscos, pollo, legumbres y otros alimentos."
+      />
+    </header>
+
+    
+
+    <h1>Recetas Favoritas</h1>
+
+    <h2>
+      Paella marinera con mariscos. <br />
+      Receta típica de la cocina española.
+    </h2>
+
+    <div id="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/xr2RTXvvKRo"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <label>
+      Elije el mejor plato de la cocina española:
+      <input list="platos" />
+    </label>
+
+    <datalist id="platos">
+      <option value="Paella"></option>
+      <option value="Morcilla"></option>
+      <option value="Tapas"></option>
+      <option value="Gazpacho"></option>
+    </datalist>
+
+    <h3 id="informacion">Receta de paella de marisco paso a paso:</h3>
+    <ul>
+      <li>Plato: Arroces</li>
+      <li>Cocina: Española</li>
+      <li>Keyword: Receta tradicional</li>
+      <li>Tiempo de preparación: 20 minutos</li>
+      <li>Tiempo de cocción: 25 minutos</li>
+      <li>Tiempo total: 45 minutos</li>
+      <li>Raciones: 4</li>
+      <li>Calorías: 340kcal</li>
+      <li>
+        Autor:
+        <a href="https://www.comedera.com/como-hacer-paella-de-marisco/"
+          >Comedera.Com</a
+        >
+      </li>
+    </ul>
+
+    <h3 id="ingredientes">Ingredientes</h3>
+    <ol>
+      <li>2 tazas de arroz</li>
+      <li>4 tazas de caldo de gambas</li>
+      <li>½ kg de calamares</li>
+      <li>½ kg de gambas frescas</li>
+      <li>1 puñado de conchas de mar almejas y mejillones</li>
+      <li>1 cebolla</li>
+      <li>1 tomate mediano</li>
+      <li>½ pimiento rojo</li>
+      <li>2 dientes de ajo</li>
+      <li>½ taza de guisantes</li>
+      <li>1 ramo de hojas de perejil fresco</li>
+      <li>Aceite de oliva</li>
+      <li>Sal</li>
+      <li>Pimienta</li>
+      <li>Colorante amarillo ó algunas hebras de azafrán</li>
+    </ol>
+    <a href="#">Volver a arriba</a>
+
+    <div id="encuesta">
+      <label>
+        <strong>Encuesta:</strong>&NonBreakingSpace; ¿Cual es el mejor plato de
+        la cocina española?
+        <input list="platos" />
+      </label>
+
+      <datalist id="platos">
+        <option value="Paella"></option>
+        <option value="Morcilla"></option>
+        <option value="Tapas"></option>
+        <option value="Gazpacho"></option>
+      </datalist>
+    </div>
+
+    <h3 id="elaboracion">Elaboración paso a paso</h3>
+    <p>
+      Limpia y pela las gambas. las conchas y cabeza para hacer caldo.
+      Resérvalo. <br />
+      También limpia los calamares y pícalos en ruedas. Limpia también las
+      conchas de mar con abundante agua para que suelten cualquier residuo de
+      arena. <br />
+      En una paellera, ó sartén muy grande y profunda, sofríe en aceite de
+      oliva, la cebolla, el ajo, pimiento y tomate picados en cuadritos
+      pequeños. Agrégale un poco de pimienta y sal. <br />
+      Pon los calamares y luego las conchas de mar. Deja que se cocinen unos
+      minutos. Verás que comienza a hacerse un caldo, esto está bien.<br />
+      Agrega las 2 tazas de arroz y revuelve para que se mezcle todo.
+      Seguidamente ponle 4 tazas del caldo de gambas que hiciste anteriormente.
+      Si no te alcanza, completa con agua. Revuelve bien. <br />
+      Agrega una cucharadita de colorante amarillo ó las hebras de azafrán y
+      deja hervir por unos 3 minutos. <br />
+      Aun con líquido en la paellera, agrega los guisantes frescos, las gambas y
+      el perejil previamente picado muy pequeñito. Chequea la sal y la pimienta
+      y agrega de ser necesario. Deja cocinar hasta que esté casi seco el
+      líquido. <br />
+      En este momento puedes ponerle unas tiras de pimiento para decorar y
+      algunos langostinos con su concha. Baja el fuego y tapa. Deja cocinar por
+      15 minutos y prueba el grano. Si está listo retira del fuego y sirve tu
+      paella de marisco con un chorro de aceite de oliva por encima para darle
+      aun más sabor.
+    </p>
+    <a href="#">Volver a arriba</a>
+  </div>
+  </body>
+</html>
